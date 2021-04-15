@@ -1,0 +1,127 @@
+=================================================================
+
+Original DOS shareware README follows.
+
+It's been over 20 years, so the addresses are no longer valid
+and Galifir Developments no longer exists.
+
+=================================================================
+
+GJID 2.0 - A game by John Remyn.
+Copyright 1990, 1992 Galifir Developments.
+
+GJID is a fascinating puzzle game, which will keep you glued to
+the screen for quite some time. It combines intricate puzzles
+with straightforward gameplay in 14 challenging levels.
+
+This game is shareware. You are encouraged to freely copy and
+distribute it, provided that no fee is charged beyond normal
+media duplication and shipping costs, and that no changes
+are made to the distribution archive contents. If you like
+this game, you are strongly encouraged to register it. You
+will receive the latest registered version of the game, along
+with a number of other (unregistered) games by the authors,
+on diskette. The registered version includes a level editor
+which allows you to create and modify GJID levels in a user
+friendly environment. For further information see the end of
+this file and the file ORDER.FRM.
+
+---- Please register --------------------------------------------
+
+Many hours of work have been put into this game. If you like it,
+please consider registering it. To encourage you to register,
+we offer you this for $10:
+
+- The registered version of GJID, including a comprehensive level
+  editor, which enables you to create your own levels. Designing
+  new levels is even more challenging than playing them.
+
+- The Solar Hockey League, a future sports simulation with fast
+  and furious action. Play against one of the challenging
+  computer teams, or compete with a friend (which is great fun).
+
+- Hi-Q, a beautiful implementation of the classical board game.
+  Not as taxing on the mind as GJID, and not so exhilarating
+  as The Solar Hockey League, but showing some very nice 256
+  color VGA graphics. This game also supports SuperVGA graphics
+  on many SVGA cards, using 256 color modes with resolutions
+  of 640x400 or 640x480 pixels.
+
+- Any other games which we may have developed since this release
+  of GJID.
+
+---- Technical Info and History ----------------------------------
+
+Programming was started on this game in 1989. It was released
+through the Public (Software) Library in Houston in 1990. Now
+(in 1992) colors and small details have been improved, a
+comprehensive level editor has been created for the registered
+version and some real documentation has been written.
+
+
+--- Ordering Information -----------------------------------------
+
+Send cash (bills) in a double envelope or in an envelope
+with some paper (possibly the order form) wrapped around the
+bills. An international money order will probably cost you a
+fee comparable to the registration amount. You can also use
+American Express Travelers Checks. Please do not send coins
+or other checks. Send the money along with the order form,
+or the information asked in the order form if you don't have
+easy access to a printer, to the address below. Remember to
+add proper postage for delivery to Europe. Mail usually takes
+a few days to reach Europe from North America. We will respond
+within 3 weeks at least, but usually within a few days.
+
+Comments, suggestions and bug reports are always welcome. For
+these, if you have access to Electronic Mail, you can use the
+following Internet address: hhanemaa@cs.ruu.nl
+
+------------------------------------------------------------------
+
+    Registration for GJID:
+
+    [ ] Normal registration, $10. You will receive a diskette
+	with the latest registered version of the game, and a
+	number of other shareware and public domain games by
+	the authors.
+
+	[ ] Personal version (your name hardcoded in the game).
+
+
+    Diskette format:
+
+    [ ] 3.5" DD diskette                 [ ] 5.25" DD diskette
+
+    Your hardware: (optional)
+
+    [ ] EGA                              [ ] VGA
+    [ ] SVGA                             [ ] other: ________________
+        chipset: ______________
+
+    [ ] 8088/86         [ ] 80186/286/V20/V30
+    [ ] 80386           [ ] 80486                      speed: ______
+
+    How did you obtain this program? (optional) ____________________
+
+    Name: __________________________________________________________
+
+    Address: _______________________________________________________
+
+    ________________________________________________________________
+
+    ________________________________________________________________
+                                         (add ZIPcode if applicable)
+    Country: ___________________________
+
+    Criticism/Comments: ____________________________________________
+
+    ________________________________________________________________
+
+
+    Mail To:
+
+                        John Remyn
+                        Rembrandtlaan 68
+                        4907 NP  Oosterhout
+                        The Netherlands

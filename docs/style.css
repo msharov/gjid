@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+	color: yellow;
+	margin: 0;
+	font-family: monospace;
+}
+#pagectr {
+	background-color: #004;
+	margin: 0 auto;
+	max-width: 60em;
+	overflow: hidden;
+}
+#header {
+	font-family: sans-serif;
+	border-bottom: 1px gray solid;
+	overflow: hidden;
+}
+div#header h1 {
+	color: orange;
+	float: left;
+	font-size: 80px;
+	margin: .4em 1em;
+}
+div#header img {
+	float: right;
+	margin-left: 1.5em;
+}
+#content {
+	background-color: #003;
+	padding: 0.5em 1.5em;
+	text-align: justify;
+}
+#content a		{ color: cyan }
+#content a:visited	{ color: magenta }
+#content a:active,tt,pre { color: white }
