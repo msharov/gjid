@@ -8,8 +8,6 @@
     <meta http-equiv="Content-Type" content="text/xhtml+xml; charset=ISO-8859-1" />
     <meta name="Description" content="Puzzle game in sokoban style" />
     <meta name="Keywords" content="game, puzzle, sokoban" />
-    <meta name="author" content="Mike Sharov" />
-    <meta name="date" content="2018-03-20" />
 </head>
 <body>
 <div id="pagectr">
@@ -49,10 +47,7 @@ by John Remyn. I spoke with John in 95, when the first version of
 this clone was made. He admired the 8-bit graphics (original game
 was done in 4-color CGA) and did not object to its existence. His
 email address has since expired and the few contact attempts I've
-made recently hit dead ends. The DOS game was $10 shareware and I
-include the original <a href="regform.txt">registration form here
-</a>, in case you want to track John down and give him money for
-the excellent level design that make this game what it is.
+made recently hit dead ends.
 </p><p>
 Aside from being an entertaining puzzle, I also release this game
 as an example of using the XCB library for making X applications.
@@ -66,7 +61,7 @@ tile sprites, and for hardware scaling of the 320x240 backbuffer.
 Download the sources from the
 <a href="https://github.com/msharov/gjid">github</a>
 <a href="https://github.com/msharov/gjid/releases">release page</a>.<br/>
-This version of GJID has no external dependencies, so:<br/>
+GJID depends only on libxcb, already installed if you have X, so:<br/>
 <pre>
 ./configure &amp;&amp; make &amp;&amp; make install
 </pre>
