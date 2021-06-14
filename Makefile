@@ -21,7 +21,7 @@ run:	${exe}
 
 ${exe}:	${objs}
 	@echo "Linking $@ ..."
-	@${CC} ${ldflags} -o $@ $^ ${libs}
+	@${CXX} ${ldflags} -o $@ $^ ${libs}
 
 $O%.o:	%.cc
 	@echo "    Compiling $< ..."
@@ -78,8 +78,8 @@ ${builddir}/.d:	Makefile
 	@touch $@
 
 Config.mk:	Config.mk.in
-config.h:	config.h.in
-${objs}:	Makefile ${confs} $O.d
+config.h:	config.h.in | Config.mk
+${objs}:	Makefile ${confs} | $O.d
 ${confs}:	configure
 	@if [ -x config.status ]; then echo "Reconfiguring ...";\
 	    ./config.status;\

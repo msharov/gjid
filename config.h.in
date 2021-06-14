@@ -10,23 +10,18 @@
 // Define to the address where bug reports for this package should be sent.
 #define @pkg_uname@_BUGREPORT	"@pkg_bugreport@"
 
-#if __has_include(<ustl.h>)
-    #include <ustl.h>
-    using namespace ustl;
-#else
-    #include <vector>
-    #include <stdexcept>
-    #include <stdint.h>
-    #include <string.h>
-    #include <stdlib.h>
-    using namespace std;
-
-    /// Returns the number of elements in a static vector
-    template <typename T, size_t N> inline size_t VectorSize (T(&)[N]) { return (N); }
-    template <typename T> inline size_t VectorSize (T(&)[0]) { return (0); }
-    /// Rounds \p n up to be divisible by \p grain
-    template <typename T> inline T Align (T n, size_t grain = 4) { n += grain - 1; return (n - n % grain); }
-    /// Shorthand for container iteration.
-    #define foreach(type,i,ctr)	for (type i = (ctr).begin(); i < (ctr).end(); ++i)
-#endif
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include <stdexcept>
+#include <vector>
+using namespace std;
+
+/// Returns the number of elements in a static vector
+template <typename T, size_t N> inline size_t VectorSize (T(&)[N]) { return (N); }
+template <typename T> inline size_t VectorSize (T(&)[0]) { return (0); }
+/// Rounds \p n up to be divisible by \p grain
+template <typename T> inline T Align (T n, size_t grain = 4) { n += grain - 1; return (n - n % grain); }
+/// Shorthand for container iteration.
+#define foreach(type,i,ctr)	for (type i = (ctr).begin(); i < (ctr).end(); ++i)

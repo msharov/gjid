@@ -3,7 +3,6 @@ name		:= @pkg_name@
 ################ Programs ############################################
 
 CXX		:= @CXX@
-CC		:= @CC@
 INSTALL		:= @INSTALL@
 INSTALL_PROGRAM	:= ${INSTALL} -m 755 -s
 
@@ -18,7 +17,7 @@ O		:= .o/
 ################ Compiler options ####################################
 
 #debug		:= 1
-libs		:= @pkglibs@
+libs		:= @pkg_libs@
 ifdef debug
     cxxflags	:= -O0 -ggdb3
     ldflags	:= -g -rdynamic
@@ -27,5 +26,5 @@ else
     ldflags	:= -s
 endif
 CXXFLAGS	:= -Wall -Wextra -Wredundant-decls -Wshadow
-cxxflags	+= -std=c++11 @pkgcflags@ ${CXXFLAGS}
-ldflags		+= @pkgldflags@ ${LDFLAGS}
+cxxflags	+= -std=c++11 @pkg_cflags@ ${CXXFLAGS}
+ldflags		+= @pkg_ldflags@ ${LDFLAGS}
