@@ -161,7 +161,7 @@ inline void GJID::PrintStory (void)
 	y += 17;
 	static const PicIndex pic[] = { Barrel2Pix, Barrel1Pix, DisposePix, OWDEastPix, ExitPix };
 	static const char* desc[] = { "- Photon disruptor", "- Nuclear weapon", "- Recycling bin", "- One-way door", "- The exit" };
-	for (auto i = 0u; i < VectorSize(pic); ++ i) {
+	for (auto i = 0u; i < size(pic); ++ i) {
 	    PutTile (pic[i], x, y);
 	    DrawText (x+TILE_W*2, y+5, desc[i], RGB(128,128,0));
 	    y += 17;

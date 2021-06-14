@@ -54,7 +54,7 @@ CXApp::CXApp (void)
 	SIGILL, SIGABRT, SIGBUS,  SIGFPE,  SIGSEGV, SIGSYS, SIGALRM, SIGXCPU,
 	SIGHUP, SIGINT,  SIGQUIT, SIGTERM, SIGCHLD, SIGXFSZ, SIGPWR, SIGPIPE
     };
-    for (auto i = 0u; i < VectorSize(c_Signals); ++ i)
+    for (auto i = 0u; i < size(c_Signals); ++ i)
 	signal (c_Signals[i], OnSignal);
     std::set_terminate (Terminate);
 
@@ -83,7 +83,7 @@ CXApp::CXApp (void)
 	"_NET_WM_WINDOW_TYPE_NORMAL"
     };
     //}}}
-    for (auto i = 0u; i < VectorSize(c_AtomNames); ++i)
+    for (auto i = 0u; i < size(c_AtomNames); ++i)
 	_atoms[i] = xcb_intern_atom (_pconn, false, strlen(c_AtomNames[i]), c_AtomNames[i]).sequence;
 
     // Receive and store keyboard mappings
@@ -96,7 +96,7 @@ CXApp::CXApp (void)
 
     // Acknowledge render version and assign atom values
     xcb_render_query_version_reply (_pconn, rendcook, nullptr);
-    for (auto i = 0u; i < VectorSize(_atoms); ++i)
+    for (auto i = 0u; i < size(_atoms); ++i)
 	_atoms[i] = xcb_intern_atom_reply(_pconn, *(xcb_intern_atom_cookie_t*)&_atoms[i], nullptr)->atom;
 
     // Find the root visual
@@ -317,6 +317,6 @@ void CXApp::DrawText (int x, int y, const char* s, uint32_t color) noexcept
     elt.len = slen;
     elt.x = x; elt.y = y;
     memcpy (elt.text, s, slen);
-    uint8_t eltsz = 8+Align(slen,4);			// This is the size of the header elements + the text padded to 4 byte grain
+    uint8_t eltsz = 8+((slen+3)&~3u);			// This is the size of the header elements + the text padded to 4 byte grain
     xcb_render_composite_glyphs_8 (_pconn, XCB_RENDER_PICT_OP_OVER, _glyphpen, _bpict, XCB_NONE, _glyphset, 0, 0, eltsz, &elt.len);
 }
